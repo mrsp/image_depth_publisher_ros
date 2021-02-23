@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Call blurr_detector_ros -->
+    <node pkg="image_depth_publisher_ros" type="image_depth_publisher_ros" name="image_depth_publisher_ros" respawn="false" output="screen" >
+    <!-- Load configurations from YAML file to parameter server -->
+        <rosparam file="$(find image_depth_publisher_ros)/config/params.yaml" command="load"/> 
+    </node>
+</launch>

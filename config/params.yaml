@@ -1,0 +1,13 @@
+image_topic: "/camera/color/image_raw"
+depth_topic: "/camera/aligned_depth_to_color/image_raw"
+cam_info_topic: "/camera/color/camera_info"
+depth_info_topic: "/camera/aligned_depth_to_color/camera_info"
+image_rate: 30
+
+depth_encoding: "16UC1" #or "32FC1"
+rgb_encoding: "bgr8"
+depth_image_list: "/home/master/intel_ws/Dataset/depthlist.txt"
+rgb_image_list:  "/home/master/intel_ws/Dataset/rgblist.txt"
+dataset_dir: "/home/master/intel_ws/Dataset"
+rgb_intrinsics_file: "/home/master/intel_ws/Dataset/rgb_intrisics.txt"
+depth_intrinsics_file: "/home/master/intel_ws/Dataset/depth_intrisics.txt" #or use the same path as rgb_intrinsics_file
